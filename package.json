@@ -1,0 +1,14 @@
+{
+  "name": "scafo-docs",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "undocs build",
+    "dev": "undocs dev"
+  },
+  "devDependencies": {
+    "undocs": "npm:undocs-nightly@0.10.1-20260903-233052-f7d5ae7"
+  },
+  "packageManager": "pnpm@11.23.0"
+}

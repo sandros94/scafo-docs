@@ -1,0 +1,72 @@
+# yaml-language-server: $schema=https://unpkg.com/undocs/schema/config.json
+name: Scafo
+url: https://scafo.dev
+shortDescription: Self-hosted serverless deployments, built around Celld
+description: Run JavaScript projects across your own machines, with an S3-compatible bucket as the registry and Celld as the runtime.
+
+lang: en
+themeColor: teal
+github: sandros94/scafo-docs
+automd: false
+
+socials:
+  bluesky: "https://bsky.app/profile/sandros94.com"
+
+banner:
+  title: "Pre-release documentation: Scafo is not published yet and this site tracks its current source."
+  color: warning
+  icon: i-lucide-construction
+
+landing:
+  contributors: false
+  heroTitle: Scafo
+  heroSubtitle: self-hosted serverless deployments
+  heroDescription: Run JavaScript projects across your own machines. Nodes coordinate through an S3-compatible bucket, Celld runs the code, and your ingress pulls the routing from the node next to it.
+  heroLinks:
+    primary:
+      label: Get started
+      icon: i-lucide-rocket
+      to: /docs
+    deploy:
+      label: Deploy recipes
+      icon: i-lucide-server
+      to: /deploy
+    github:
+      label: View on GitHub
+      icon: i-simple-icons-github
+      to: https://github.com/sandros94/scafo
+      target: _blank
+  heroCode:
+    lang: sh
+    title: Terminal
+    content: |
+      npm install --global scafo
+      scafo deploy ./my-project --project my-project --remote prod
+  featuresTitle: What is in the box
+  features:
+    - title: One binary
+      icon: i-lucide-box
+      description: "`scafo sail` runs a node; the same executable is the operator CLI."
+    - title: Bucket as registry
+      icon: i-lucide-database
+      description: Projects, environments, placements and nodes are JSON objects in an S3-compatible bucket, updated with conditional writes. No database, no consensus protocol.
+    - title: Celld runtime
+      icon: i-lucide-cpu
+      description: Each environment runs as its own Celld fleet, one process per assigned node.
+    - title: Ingress pulls routing
+      icon: i-lucide-route
+      description: Caddy (with the scafo modules) or Traefik (http provider) read the fleet's routing from the node API. The node writes no ingress configuration.
+    - title: Certificates through the node
+      icon: i-lucide-lock
+      description: Caddy stores certificates, ACME accounts and locks in the bucket through the node, holding only an ingress token.
+    - title: WireGuard transport
+      icon: i-lucide-network
+      description: "`scafo wg init` and `scafo wg peers` render the tunnel between nodes; listeners follow the tunnel address."
+
+llms:
+  domain: https://scafo.dev
+  title: Scafo documentation
+  description: Documentation for Scafo, a self-hosted serverless deployment platform for JavaScript projects.
+  full:
+    title: Scafo documentation
+    description: Complete documentation for Scafo, including installation, configuration, deploy recipes, operations and reference material.
