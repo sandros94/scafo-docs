@@ -5,7 +5,7 @@ Source of [scafo.dev](https://scafo.dev), built with [undocs](https://github.com
 ```sh
 pnpm install
 pnpm dev     # local preview
-pnpm build   # static site in .docs/.output/public
+pnpm build   # nitro server in .output/ (Netlify: NITRO_PRESET=netlify → dist/ + .netlify/functions-internal)
 ```
 
 The documentation describes [scafo](https://github.com/sandros94/scafo) and [scafo-ingress](https://github.com/sandros94/scafo-ingress); those repositories stay authoritative for behaviour.
