@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../.docs/public/icon.svg" width="96" alt="">
+</p>
+
 # scafo-docs
 
 Source of [scafo.dev](https://scafo.dev), built with [undocs](https://github.com/unjs/undocs).
