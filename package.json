@@ -8,7 +8,7 @@
     "dev": "undocs dev"
   },
   "devDependencies": {
-    "undocs": "npm:undocs-nightly@0.10.1-20260903-233052-f7d5ae7"
+    "undocs": "npm:undocs-nightly@0.10.1-20260909-093701-9b3fed7"
   },
   "packageManager": "pnpm@11.23.0"
 }

@@ -1,4 +1,5 @@
-# yaml-language-server: $schema=https://unpkg.com/undocs/schema/config.json
+# yaml-language-server: $schema=https://unpkg.com/undocs-nightly@0.10.1-20260909-093701-9b3fed7/schema/config.json
+
 name: Scafo
 url: https://scafo.dev
 shortDescription: Self-hosted serverless deployments, built around Celld
@@ -63,10 +64,15 @@ landing:
       icon: i-lucide-network
       description: "`scafo wg init` and `scafo wg peers` render the tunnel between nodes; listeners follow the tunnel address."
 
+footer:
+  notes:
+    - Released under the [Apache-2.0 License](https://github.com/sandros94/scafo/blob/main/LICENSE).
+    - Docs hosted on [Netlify](https://netlify.com/), [MIT License](https://github.com/sandros94/scafo-docs/blob/main/LICENSE).
+
 llms:
   domain: https://scafo.dev
-  title: Scafo documentation
-  description: Documentation for Scafo, a self-hosted serverless deployment platform for JavaScript projects.
+  title: Scafo
+  description: Scafo, a self-hosted serverless deployment platform for JavaScript projects.
   full:
     title: Scafo documentation
     description: Complete documentation for Scafo, including installation, configuration, deploy recipes, operations and reference material.
