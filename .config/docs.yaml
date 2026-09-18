@@ -42,7 +42,7 @@ landing:
     title: Terminal
     content: |
       npm install --global scafo
-      scafo deploy ./my-project --project my-project --remote prod
+      scafo deploy ./my-app --name my-app --remote prod
   featuresTitle: What is in the box
   features:
     - title: One binary
@@ -50,10 +50,10 @@ landing:
       description: "`scafo sail` runs a node; the same executable is the operator CLI."
     - title: Bucket as registry
       icon: i-lucide-database
-      description: Projects, environments, placements and nodes are JSON objects in an S3-compatible bucket, updated with conditional writes. No database, no consensus protocol.
+      description: Applications, placements and nodes are JSON objects in an S3-compatible bucket, updated with conditional writes. No database, no consensus protocol.
     - title: Celld runtime
       icon: i-lucide-cpu
-      description: Each environment runs as its own Celld fleet, one process per assigned node.
+      description: Each application runs as its own Celld fleet, one process per assigned node.
     - title: Ingress pulls routing
       icon: i-lucide-route
       description: Caddy (with the scafo modules) or Traefik (http provider) read the fleet's routing from the node API. The node writes no ingress configuration.
