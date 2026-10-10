@@ -13,11 +13,6 @@ automd: false
 socials:
   bluesky: "https://bsky.app/profile/sandros94.com"
 
-banner:
-  title: "Pre-release documentation: Scafo is not published yet and this site tracks its current source."
-  color: warning
-  icon: i-lucide-construction
-
 landing:
   contributors: false
   heroTitle: Scafo
