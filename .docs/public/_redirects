@@ -1,8 +1,2 @@
-# Served by Netlify as proxies (status 200): the body is fetched from GitHub at
-# request time, never at build time, so a patch to either script needs no docs
-# rebuild. Nitro appends its own rules below these when it builds for Netlify.
 /install.sh    https://raw.githubusercontent.com/sandros94/scafo/main/scripts/install.sh    200!
 /uninstall.sh  https://raw.githubusercontent.com/sandros94/scafo/main/scripts/uninstall.sh  200!
-# Proof of the mechanism while the scafo repository is still private: a public
-# file through the same rule. Remove once /install.sh answers.
-/proxy-check.txt  https://raw.githubusercontent.com/sandros94/unsecure/main/LICENSE  200!
